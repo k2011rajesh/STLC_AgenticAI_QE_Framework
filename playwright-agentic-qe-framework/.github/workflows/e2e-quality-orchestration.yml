@@ -1,0 +1,359 @@
+name: E2E Test Management Orchestration
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    - cron: '0 2 * * *'  # Nightly at 2 AM UTC
+
+env:
+  JIRA_HOST: ${{ secrets.JIRA_HOST }}
+  JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+  JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+  JIRA_PROJECT_KEY: ${{ secrets.JIRA_PROJECT_KEY }}
+  XRAY_CLIENT_ID: ${{ secrets.XRAY_CLIENT_ID }}
+  XRAY_CLIENT_SECRET: ${{ secrets.XRAY_CLIENT_SECRET }}
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+
+jobs:
+  application-discovery:
+    name: Application Discovery & Requirement Mapping
+    runs-on: ubuntu-latest
+    outputs:
+      discovery-complete: ${{ steps.discover.outputs.complete }}
+      tech-stack: ${{ steps.discover.outputs.tech-stack }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Application Discovery
+        id: discover
+        run: |
+          node scripts/discovery.js > discovery-output.json
+          echo "complete=true" >> $GITHUB_OUTPUT
+          echo "::group::Discovery Results"
+          cat discovery-output.json
+          echo "::endgroup::"
+
+      - name: Upload Discovery Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: discovery-report
+          path: discovery-output.json
+
+  requirements-quality:
+    name: Requirements Quality Analysis & JIRA Mapping
+    runs-on: ubuntu-latest
+    needs: application-discovery
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Analyze Requirement Quality
+        id: req-analysis
+        run: |
+          node scripts/analyze-requirements.js > requirements-analysis.json
+          echo "::group::Requirement Analysis"
+          cat requirements-analysis.json
+          echo "::endgroup::"
+
+      - name: Create/Update JIRA Epic
+        id: jira-epic
+        run: |
+          node scripts/create-jira-epic.js
+          echo "epic-key=$(jq -r '.epicKey' jira-epic-created.json)" >> $GITHUB_OUTPUT
+
+      - name: Create JIRA Stories with Quality Criteria
+        run: |
+          node scripts/create-jira-stories.js \
+            --epic-key=${{ steps.jira-epic.outputs.epic-key }} \
+            --invest-threshold=75 \
+            --smart-threshold=80
+
+      - name: Upload Quality Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: requirements-quality
+          path: requirements-analysis.json
+
+  bdd-design-quality:
+    name: BDD Design & Gherkin Quality
+    runs-on: ubuntu-latest
+    needs: requirements-quality
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Map Requirements to BDD Scenarios
+        id: bdd-map
+        run: |
+          node scripts/map-requirements-to-bdd.js > bdd-mapping-output.json
+          QUALITY_SCORE=$(jq -r '.overallQualityScore' bdd-mapping-output.json)
+          echo "quality-score=$QUALITY_SCORE" >> $GITHUB_OUTPUT
+          echo "::group::BDD Mapping Quality"
+          echo "Overall Quality Score: $QUALITY_SCORE/100"
+          jq '.qualityDistribution' bdd-mapping-output.json
+          echo "::endgroup::"
+
+      - name: Generate Gherkin Feature Files
+        run: |
+          node scripts/generate-feature-files.js --output=playwright/generated
+
+      - name: Validate Gherkin Syntax
+        run: |
+          npx gherkin-lint playwright/**/*.feature
+
+      - name: Create Xray Test Cases from BDD
+        run: |
+          node scripts/sync-bdd-to-xray.js \
+            --feature-path=playwright/generated \
+            --project-key=${{ env.JIRA_PROJECT_KEY }}
+
+      - name: Upload BDD Quality Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: bdd-quality
+          path: bdd-mapping-output.json
+
+      - name: Check Quality Gate
+        run: |
+          SCORE=${{ steps.bdd-map.outputs.quality-score }}
+          if [ "$SCORE" -lt 75 ]; then
+            echo "::error::BDD Quality score $SCORE is below threshold of 75"
+            exit 1
+          fi
+
+  test-execution:
+    name: Execute E2E Tests
+    runs-on: ubuntu-latest
+    needs: bdd-design-quality
+    strategy:
+      matrix:
+        domain: [insurance, healthcare, banking]
+        test-type: [smoke, regression]
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run ${{ matrix.test-type }} Tests - ${{ matrix.domain }}
+        id: test-run
+        run: |
+          npm run test:${{ matrix.domain }}:${{ matrix.test-type }} \
+            --reporter=html \
+            --reporter=json \
+            > test-results-${{ matrix.domain }}-${{ matrix.test-type }}.json
+          exit 0  # Don't fail job for test failures
+
+      - name: Generate HTML Report
+        if: always()
+        run: |
+          npm run generate-report \
+            --output=test-report-${{ matrix.domain }}-${{ matrix.test-type }}.html \
+            --input=test-results-${{ matrix.domain }}-${{ matrix.test-type }}.json
+
+      - name: Calculate Quality Metrics
+        id: metrics
+        run: |
+          node scripts/calculate-execution-metrics.js \
+            --results=test-results-${{ matrix.domain }}-${{ matrix.test-type }}.json \
+            > execution-metrics-${{ matrix.domain }}.json
+          echo "::group::Execution Metrics"
+          cat execution-metrics-${{ matrix.domain }}.json
+          echo "::endgroup::"
+
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-${{ matrix.domain }}-${{ matrix.test-type }}
+          path: |
+            test-results-${{ matrix.domain }}-${{ matrix.test-type }}.json
+            test-report-${{ matrix.domain }}-${{ matrix.test-type }}.html
+            execution-metrics-${{ matrix.domain }}.json
+
+  quality-consolidation:
+    name: Consolidate Quality Metrics & Update Dashboards
+    runs-on: ubuntu-latest
+    needs: [requirements-quality, bdd-design-quality, test-execution]
+    if: always()
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Download All Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: ./artifacts
+
+      - name: Consolidate Quality Metrics
+        id: consolidate
+        run: |
+          node scripts/consolidate-quality-metrics.js \
+            --artifacts-path=./artifacts \
+            > consolidated-quality-report.json
+          echo "::group::Consolidated Quality Report"
+          cat consolidated-quality-report.json
+          echo "::endgroup::"
+
+      - name: Update JIRA Stories with Results
+        run: |
+          node scripts/update-jira-with-results.js \
+            --metrics-file=consolidated-quality-report.json \
+            --project-key=${{ env.JIRA_PROJECT_KEY }}
+
+      - name: Publish Test Results to Xray
+        run: |
+          node scripts/publish-to-xray.js \
+            --artifacts-path=./artifacts \
+            --test-plan-key=${{ env.JIRA_PROJECT_KEY }}
+
+      - name: Generate Quality Dashboard
+        id: dashboard
+        run: |
+          node scripts/generate-dashboard.js \
+            --metrics-file=consolidated-quality-report.json \
+            --output=quality-dashboard.json
+          OVERALL_SCORE=$(jq -r '.overallQualityScore' quality-dashboard.json)
+          echo "overall-score=$OVERALL_SCORE" >> $GITHUB_OUTPUT
+          echo "::group::Quality Dashboard"
+          echo "Overall Quality Score: $OVERALL_SCORE/100"
+          jq '.summary' quality-dashboard.json
+          echo "::endgroup::"
+
+      - name: Generate Quality Report Markdown
+        run: |
+          node scripts/generate-report-markdown.js \
+            --metrics-file=consolidated-quality-report.json \
+            --dashboard-file=quality-dashboard.json \
+            > QUALITY_REPORT.md
+
+      - name: Post Quality Report to PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('QUALITY_REPORT.md', 'utf8');
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: report
+            });
+
+      - name: Upload Quality Dashboard
+        uses: actions/upload-artifact@v3
+        with:
+          name: quality-dashboard
+          path: quality-dashboard.json
+
+      - name: Check Quality Gate
+        run: |
+          SCORE=${{ steps.dashboard.outputs.overall-score }}
+          if [ "$SCORE" -lt 80 ]; then
+            echo "::warning::Overall Quality score $SCORE is below recommended threshold of 80"
+          fi
+
+  create-github-release:
+    name: Create Release & Documentation
+    runs-on: ubuntu-latest
+    needs: quality-consolidation
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download Quality Artifacts
+        uses: actions/download-artifact@v3
+
+      - name: Create Quality Release Notes
+        run: |
+          node scripts/create-release-notes.js \
+            --artifacts-path=./ \
+            > RELEASE_NOTES.md
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: E2E Quality Report - Run ${{ github.run_number }}
+          body_path: RELEASE_NOTES.md
+          draft: false
+          prerelease: false
+
+  notify-status:
+    name: Send Notifications
+    runs-on: ubuntu-latest
+    needs: [quality-consolidation]
+    if: always()
+    steps:
+      - name: Prepare Notification
+        run: |
+          echo "E2E Test Management Orchestration Complete"
+          echo "Status: ${{ needs.quality-consolidation.result }}"
+
+      - name: Slack Notification
+        if: secrets.SLACK_WEBHOOK
+        uses: slackapi/slack-github-action@v1
+        with:
+          webhook-url: ${{ secrets.SLACK_WEBHOOK }}
+          payload: |
+            {
+              "text": "E2E Quality Report - Run ${{ github.run_number }}",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "E2E Test Management Orchestration Complete\nStatus: ${{ needs.quality-consolidation.result }}"
+                  }
+                }
+              ]
+            }

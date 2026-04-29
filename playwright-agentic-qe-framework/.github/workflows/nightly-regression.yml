@@ -1,0 +1,20 @@
+name: Nightly Regression
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        working-directory: ./playwright
+        run: npm ci
+      - name: Run full regression
+        working-directory: ./playwright
+        run: npx playwright test --grep @regression

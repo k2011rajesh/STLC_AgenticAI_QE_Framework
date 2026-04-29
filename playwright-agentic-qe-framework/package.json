@@ -1,0 +1,32 @@
+{
+  "name": "playwright-agentic-qe-framework",
+  "version": "1.0.0",
+  "description": "Agent-based QE framework aligned to STLC with Jira, Xray, GitHub Actions, defect logging, and triage.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "cucumber-js",
+    "test:ui": "cucumber-js --tags @ui",
+    "test:api": "cucumber-js --tags @api",
+    "test:db": "cucumber-js --tags @db",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:regression": "cucumber-js --tags @regression",
+    "test:insurance": "cucumber-js --tags @insurance",
+    "test:healthcare": "cucumber-js --tags @healthcare",
+    "test:banking": "cucumber-js --tags @banking"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@cucumber/cucumber": "^12.8.1",
+    "@playwright/test": "^1.40.0",
+    "axios": "^1.15.2",
+    "openai": "^6.34.0",
+    "pg": "^8.20.0",
+    "playwright": "^1.59.1"
+  }
+}

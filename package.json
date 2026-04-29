@@ -1,0 +1,28 @@
+{
+  "name": "playwright-agentic-qe-framework-root",
+  "version": "1.0.0",
+  "description": "Root level orchestrator for Playwright Agentic QE Framework",
+  "main": "run_agents.js",
+  "scripts": {
+    "agents": "node run_agents.js",
+    "quality-report": "cd playwright-agentic-qe-framework && node generate_bdd_quality_report.js",
+    "invest": "cd playwright-agentic-qe-framework && node invest_quality_example.js",
+    "test": "cd playwright-agentic-qe-framework && npm test",
+    "test:ui": "cd playwright-agentic-qe-framework && npm run test:ui",
+    "test:smoke": "cd playwright-agentic-qe-framework && npm run test:smoke",
+    "test:regression": "cd playwright-agentic-qe-framework && npm run test:regression",
+    "test:insurance": "cd playwright-agentic-qe-framework && npm run test:insurance",
+    "test:healthcare": "cd playwright-agentic-qe-framework && npm run test:healthcare",
+    "test:banking": "cd playwright-agentic-qe-framework && npm run test:banking",
+    "dashboard": "start playwright-agentic-qe-framework/bdd_dashboard.html"
+  },
+  "keywords": [
+    "playwright",
+    "bdd",
+    "cucumber",
+    "qe",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC"
+}
