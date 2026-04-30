@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1689900
+              "duration": 1586699
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 38106599,
+              "duration": 26812399,
               "error_message": "{\"message\":\"\",\"name\":\"AggregateError\",\"stack\":\"AggregateError\\n    at AxiosError.from (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:881:24)\\n    at RedirectableRequest.handleRequestError (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:3397:25)\\n    at RedirectableRequest.emit (node:events:518:28)\\n    at eventHandlers.<computed> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\follow-redirects\\\\index.js:56:24)\\n    at ClientRequest.emit (node:events:518:28)\\n    at emitErrorEvent (node:_http_client:104:11)\\n    at Socket.socketErrorListener (node:_http_client:518:5)\\n    at Socket.emit (node:events:530:35)\\n    at emitErrorNT (node:internal/streams/destroy:170:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\\n    at Axios.request (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:4517:41)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async World.<anonymous> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\playwright\\\\insurance\\\\insurance_steps.js:50:20)\\n    at async wrapPromiseWithTimeout (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\time.js:67:12)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\user_code_runner.js:64:22)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\step_runner.js:64:26)\\n    at async TestCaseRunner.invokeStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:127:16)\\n    at async TestCaseRunner.runStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:299:26)\\n    at async C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:212:44\\n    at async TestCaseRunner.aroundTestStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:152:32)\",\"config\":{\"transitional\":{\"silentJSONParsing\":true,\"forcedJSONParsing\":true,\"clarifyTimeoutError\":false,\"legacyInterceptorReqResOrdering\":true},\"adapter\":[\"xhr\",\"http\",\"fetch\"],\"transformRequest\":[null],\"transformResponse\":[null],\"timeout\":0,\"xsrfCookieName\":\"XSRF-TOKEN\",\"xsrfHeaderName\":\"X-XSRF-TOKEN\",\"maxContentLength\":-1,\"maxBodyLength\":-1,\"env\":{},\"headers\":{\"Accept\":\"application/json, text/plain, */*\",\"Content-Type\":\"application/json\",\"User-Agent\":\"axios/1.15.2\",\"Content-Length\":\"24\",\"Accept-Encoding\":\"gzip, compress, deflate, br\"},\"method\":\"post\",\"url\":\"http://localhost:3000/api/applications\",\"data\":\"{\\\"name\\\":\\\"John\\\",\\\"age\\\":45}\",\"allowAbsoluteUrls\":true},\"code\":\"ECONNREFUSED\"}\n    at AxiosError.from (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:881:24)\n    at RedirectableRequest.handleRequestError (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:3397:25)\n    at RedirectableRequest.emit (node:events:518:28)\n    at eventHandlers.<computed> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\follow-redirects\\index.js:56:24)\n    at ClientRequest.emit (node:events:518:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:530:35)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:4517:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\insurance\\insurance_steps.js:50:20)"
             }
           },
@@ -225,7 +225,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 246599
+              "duration": 191499
             }
           },
           {
@@ -238,7 +238,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 6485099,
+              "duration": 4645100,
               "error_message": "{\"code\":\"ECONNREFUSED\"}\n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)\n    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)"
             }
           },
@@ -434,7 +434,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2762722699,
+              "duration": 3007133299,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/apply\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/apply\", waiting until \"load\"\u001b[22m\n\n    at UIHelper.navigateTo (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\helpers\\UIHelper.js:9:21)\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\insurance\\insurance_steps.js:17:18)"
             }
           },
@@ -597,7 +597,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 333300
+              "duration": 387400
             }
           },
           {
@@ -676,7 +676,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2999053500,
+              "duration": 2909962599,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/apply\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/apply\", waiting until \"load\"\u001b[22m\n\n    at UIHelper.navigateTo (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\helpers\\UIHelper.js:9:21)\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\insurance\\insurance_steps.js:17:18)"
             }
           },
@@ -760,7 +760,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2957252099,
+              "duration": 2911015699,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/apply\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/apply\", waiting until \"load\"\u001b[22m\n\n    at UIHelper.navigateTo (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\helpers\\UIHelper.js:9:21)\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\insurance\\insurance_steps.js:17:18)"
             }
           },
@@ -844,7 +844,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2879236899,
+              "duration": 2913934199,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/apply\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/apply\", waiting until \"load\"\u001b[22m\n\n    at UIHelper.navigateTo (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\helpers\\UIHelper.js:9:21)\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\insurance\\insurance_steps.js:17:18)"
             }
           },
@@ -928,7 +928,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2927397199,
+              "duration": 2926063500,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/apply\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/apply\", waiting until \"load\"\u001b[22m\n\n    at UIHelper.navigateTo (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\helpers\\UIHelper.js:9:21)\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\insurance\\insurance_steps.js:17:18)"
             }
           },
@@ -1872,7 +1872,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 3077545799,
+              "duration": 2922731299,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/apply\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/apply\", waiting until \"load\"\u001b[22m\n\n    at UIHelper.navigateTo (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\helpers\\UIHelper.js:9:21)\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\insurance\\insurance_steps.js:17:18)"
             }
           },
@@ -2116,7 +2116,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 274900
+              "duration": 198800
             }
           },
           {
@@ -2129,7 +2129,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 6783299,
+              "duration": 5396000,
               "error_message": "{\"message\":\"\",\"name\":\"AggregateError\",\"stack\":\"AggregateError\\n    at AxiosError.from (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:881:24)\\n    at RedirectableRequest.handleRequestError (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:3397:25)\\n    at RedirectableRequest.emit (node:events:518:28)\\n    at eventHandlers.<computed> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\follow-redirects\\\\index.js:56:24)\\n    at ClientRequest.emit (node:events:518:28)\\n    at emitErrorEvent (node:_http_client:104:11)\\n    at Socket.socketErrorListener (node:_http_client:518:5)\\n    at Socket.emit (node:events:530:35)\\n    at emitErrorNT (node:internal/streams/destroy:170:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\\n    at Axios.request (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:4517:41)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async World.<anonymous> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\playwright\\\\healthcare\\\\step_definitions\\\\healthcare_steps.js:86:20)\\n    at async wrapPromiseWithTimeout (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\time.js:67:12)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\user_code_runner.js:64:22)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\step_runner.js:64:26)\\n    at async TestCaseRunner.invokeStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:127:16)\\n    at async TestCaseRunner.runStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:299:26)\\n    at async C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:212:44\\n    at async TestCaseRunner.aroundTestStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:152:32)\",\"config\":{\"transitional\":{\"silentJSONParsing\":true,\"forcedJSONParsing\":true,\"clarifyTimeoutError\":false,\"legacyInterceptorReqResOrdering\":true},\"adapter\":[\"xhr\",\"http\",\"fetch\"],\"transformRequest\":[null],\"transformResponse\":[null],\"timeout\":0,\"xsrfCookieName\":\"XSRF-TOKEN\",\"xsrfHeaderName\":\"X-XSRF-TOKEN\",\"maxContentLength\":-1,\"maxBodyLength\":-1,\"env\":{},\"headers\":{\"Accept\":\"application/json, text/plain, */*\",\"Content-Type\":\"application/json\",\"User-Agent\":\"axios/1.15.2\",\"Content-Length\":\"24\",\"Accept-Encoding\":\"gzip, compress, deflate, br\"},\"method\":\"post\",\"url\":\"http://localhost:3001/api/patients\",\"data\":\"{\\\"name\\\":\\\"Jane\\\",\\\"age\\\":35}\",\"allowAbsoluteUrls\":true},\"code\":\"ECONNREFUSED\"}\n    at AxiosError.from (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:881:24)\n    at RedirectableRequest.handleRequestError (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:3397:25)\n    at RedirectableRequest.emit (node:events:518:28)\n    at eventHandlers.<computed> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\follow-redirects\\index.js:56:24)\n    at ClientRequest.emit (node:events:518:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:530:35)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:4517:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:86:20)"
             }
           },
@@ -2189,7 +2189,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 156500
+              "duration": 197700
             }
           },
           {
@@ -2202,7 +2202,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 4815399,
+              "duration": 4897400,
               "error_message": "{\"message\":\"\",\"name\":\"AggregateError\",\"stack\":\"AggregateError\\n    at AxiosError.from (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:881:24)\\n    at RedirectableRequest.handleRequestError (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:3397:25)\\n    at RedirectableRequest.emit (node:events:518:28)\\n    at eventHandlers.<computed> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\follow-redirects\\\\index.js:56:24)\\n    at ClientRequest.emit (node:events:518:28)\\n    at emitErrorEvent (node:_http_client:104:11)\\n    at Socket.socketErrorListener (node:_http_client:518:5)\\n    at Socket.emit (node:events:530:35)\\n    at emitErrorNT (node:internal/streams/destroy:170:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\\n    at Axios.request (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:4517:41)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async World.<anonymous> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\playwright\\\\healthcare\\\\step_definitions\\\\healthcare_steps.js:99:20)\\n    at async wrapPromiseWithTimeout (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\time.js:67:12)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\user_code_runner.js:64:22)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\step_runner.js:64:26)\\n    at async TestCaseRunner.invokeStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:127:16)\\n    at async TestCaseRunner.runStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:299:26)\\n    at async C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:212:44\\n    at async TestCaseRunner.aroundTestStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:152:32)\",\"config\":{\"transitional\":{\"silentJSONParsing\":true,\"forcedJSONParsing\":true,\"clarifyTimeoutError\":false,\"legacyInterceptorReqResOrdering\":true},\"adapter\":[\"xhr\",\"http\",\"fetch\"],\"transformRequest\":[null],\"transformResponse\":[null],\"timeout\":0,\"xsrfCookieName\":\"XSRF-TOKEN\",\"xsrfHeaderName\":\"X-XSRF-TOKEN\",\"maxContentLength\":-1,\"maxBodyLength\":-1,\"env\":{},\"headers\":{\"Accept\":\"application/json, text/plain, */*\",\"User-Agent\":\"axios/1.15.2\",\"Accept-Encoding\":\"gzip, compress, deflate, br\"},\"method\":\"get\",\"url\":\"http://localhost:3001/api/appointments/1\",\"allowAbsoluteUrls\":true},\"code\":\"ECONNREFUSED\"}\n    at AxiosError.from (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:881:24)\n    at RedirectableRequest.handleRequestError (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:3397:25)\n    at RedirectableRequest.emit (node:events:518:28)\n    at eventHandlers.<computed> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\follow-redirects\\index.js:56:24)\n    at ClientRequest.emit (node:events:518:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:530:35)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:4517:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:99:20)"
             }
           },
@@ -2256,7 +2256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 145300
+              "duration": 187399
             }
           },
           {
@@ -2269,7 +2269,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 4031100,
+              "duration": 4659400,
               "error_message": "{\"message\":\"\",\"name\":\"AggregateError\",\"stack\":\"AggregateError\\n    at AxiosError.from (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:881:24)\\n    at RedirectableRequest.handleRequestError (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:3397:25)\\n    at RedirectableRequest.emit (node:events:518:28)\\n    at eventHandlers.<computed> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\follow-redirects\\\\index.js:56:24)\\n    at ClientRequest.emit (node:events:518:28)\\n    at emitErrorEvent (node:_http_client:104:11)\\n    at Socket.socketErrorListener (node:_http_client:518:5)\\n    at Socket.emit (node:events:530:35)\\n    at emitErrorNT (node:internal/streams/destroy:170:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\\n    at Axios.request (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:4517:41)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async World.<anonymous> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\playwright\\\\healthcare\\\\step_definitions\\\\healthcare_steps.js:108:20)\\n    at async wrapPromiseWithTimeout (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\time.js:67:12)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\user_code_runner.js:64:22)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\step_runner.js:64:26)\\n    at async TestCaseRunner.invokeStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:127:16)\\n    at async TestCaseRunner.runStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:299:26)\\n    at async C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:212:44\\n    at async TestCaseRunner.aroundTestStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:152:32)\",\"config\":{\"transitional\":{\"silentJSONParsing\":true,\"forcedJSONParsing\":true,\"clarifyTimeoutError\":false,\"legacyInterceptorReqResOrdering\":true},\"adapter\":[\"xhr\",\"http\",\"fetch\"],\"transformRequest\":[null],\"transformResponse\":[null],\"timeout\":0,\"xsrfCookieName\":\"XSRF-TOKEN\",\"xsrfHeaderName\":\"X-XSRF-TOKEN\",\"maxContentLength\":-1,\"maxBodyLength\":-1,\"env\":{},\"headers\":{\"Accept\":\"application/json, text/plain, */*\",\"Content-Type\":\"application/json\",\"User-Agent\":\"axios/1.15.2\",\"Content-Length\":\"23\",\"Accept-Encoding\":\"gzip, compress, deflate, br\"},\"method\":\"put\",\"url\":\"http://localhost:3001/api/patients/1\",\"data\":\"{\\\"name\\\":\\\"Jane Updated\\\"}\",\"allowAbsoluteUrls\":true},\"code\":\"ECONNREFUSED\"}\n    at AxiosError.from (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:881:24)\n    at RedirectableRequest.handleRequestError (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:3397:25)\n    at RedirectableRequest.emit (node:events:518:28)\n    at eventHandlers.<computed> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\follow-redirects\\index.js:56:24)\n    at ClientRequest.emit (node:events:518:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:530:35)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:4517:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:108:20)"
             }
           },
@@ -2339,7 +2339,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 150399
+              "duration": 180899
             }
           },
           {
@@ -2352,7 +2352,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 4229399,
+              "duration": 3503899,
               "error_message": "{\"code\":\"ECONNREFUSED\"}\n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)\n    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)"
             }
           },
@@ -2412,7 +2412,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 167299
+              "duration": 180700
             }
           },
           {
@@ -2425,7 +2425,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1280299,
+              "duration": 1077600,
               "error_message": "Error: Connection terminated unexpectedly\n    at C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\pg\\lib\\client.js:631:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:133:3)"
             }
           },
@@ -2479,7 +2479,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 109500
+              "duration": 168900
             }
           },
           {
@@ -2492,7 +2492,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5003128399,
+              "duration": 5003442299,
               "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
             }
           },
@@ -2555,27 +2555,27 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;patients-register-with-different-health-profiles",
         "keyword": "Scenario Outline",
-        "line": 14,
+        "line": 30,
         "name": "Patients register with different health profiles",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 15,
             "name": "the user is on the healthcare registration page",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:8"
             },
             "result": {
               "status": "failed",
-              "duration": 3182137400,
+              "duration": 2939321400,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/register\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3001/register\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:11:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 16,
             "name": "the user registers with name \"Jane Doe\" age \"35\" and condition \"None\"",
             "result": {
               "status": "undefined",
@@ -2585,7 +2585,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 17,
             "name": "selects health plan \"premium\"",
             "result": {
               "status": "undefined",
@@ -2595,7 +2595,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 18,
             "name": "accepts terms and conditions",
             "result": {
               "status": "undefined",
@@ -2605,8 +2605,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "patient account should be created successfully",
+            "line": 19,
+            "name": "AC-1: patient account should be created successfully",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2615,8 +2615,68 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
-            "name": "confirmation email should be sent to \"jane@example.com\"",
+            "line": 20,
+            "name": "AC-2: confirmation email should be sent to \"jane@example.com\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "AC-3: patient ID is assigned",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "AC-4: insurance details are linked",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "AC-5: health profile is recorded",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "AC-6: emergency contact is verified",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "AC-7: medical history is documented",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "AC-8: account status shows \"Active\"",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2625,12 +2685,60 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@xray(\"XR-TC-102\")",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac7",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac8",
+            "line": 13
           }
         ],
         "type": "scenario"
@@ -2639,27 +2747,27 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;patients-register-with-different-health-profiles",
         "keyword": "Scenario Outline",
-        "line": 15,
+        "line": 31,
         "name": "Patients register with different health profiles",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 15,
             "name": "the user is on the healthcare registration page",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:8"
             },
             "result": {
               "status": "failed",
-              "duration": 2995533599,
+              "duration": 2933522000,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/register\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3001/register\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:11:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 16,
             "name": "the user registers with name \"Bob Smith\" age \"50\" and condition \"Hypertension\"",
             "result": {
               "status": "undefined",
@@ -2669,7 +2777,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 17,
             "name": "selects health plan \"standard\"",
             "result": {
               "status": "undefined",
@@ -2679,7 +2787,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 18,
             "name": "accepts terms and conditions",
             "result": {
               "status": "undefined",
@@ -2689,8 +2797,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "patient account should be created successfully",
+            "line": 19,
+            "name": "AC-1: patient account should be created successfully",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2699,8 +2807,68 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
-            "name": "confirmation email should be sent to \"bob@example.com\"",
+            "line": 20,
+            "name": "AC-2: confirmation email should be sent to \"bob@example.com\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "AC-3: patient ID is assigned",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "AC-4: insurance details are linked",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "AC-5: health profile is recorded",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "AC-6: emergency contact is verified",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "AC-7: medical history is documented",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "AC-8: account status shows \"Active\"",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2709,12 +2877,60 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@xray(\"XR-TC-102\")",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac7",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac8",
+            "line": 13
           }
         ],
         "type": "scenario"
@@ -2723,27 +2939,27 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;patients-register-with-different-health-profiles",
         "keyword": "Scenario Outline",
-        "line": 16,
+        "line": 32,
         "name": "Patients register with different health profiles",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 15,
             "name": "the user is on the healthcare registration page",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:8"
             },
             "result": {
               "status": "failed",
-              "duration": 2914339899,
+              "duration": 2946682399,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/register\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3001/register\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:11:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 16,
             "name": "the user registers with name \"Alice Green\" age \"28\" and condition \"Diabetes\"",
             "result": {
               "status": "undefined",
@@ -2753,7 +2969,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 17,
             "name": "selects health plan \"premium\"",
             "result": {
               "status": "undefined",
@@ -2763,7 +2979,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 18,
             "name": "accepts terms and conditions",
             "result": {
               "status": "undefined",
@@ -2773,8 +2989,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "patient account should be created successfully",
+            "line": 19,
+            "name": "AC-1: patient account should be created successfully",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2783,8 +2999,68 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
-            "name": "confirmation email should be sent to \"alice@example.com\"",
+            "line": 20,
+            "name": "AC-2: confirmation email should be sent to \"alice@example.com\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "AC-3: patient ID is assigned",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "AC-4: insurance details are linked",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "AC-5: health profile is recorded",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "AC-6: emergency contact is verified",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "AC-7: medical history is documented",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "AC-8: account status shows \"Active\"",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2793,12 +3069,60 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@xray(\"XR-TC-102\")",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac7",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac8",
+            "line": 13
           }
         ],
         "type": "scenario"
@@ -2807,27 +3131,27 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;patients-register-with-different-health-profiles",
         "keyword": "Scenario Outline",
-        "line": 17,
+        "line": 33,
         "name": "Patients register with different health profiles",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 15,
             "name": "the user is on the healthcare registration page",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:8"
             },
             "result": {
               "status": "failed",
-              "duration": 2925392400,
+              "duration": 2967576300,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/register\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3001/register\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:11:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 16,
             "name": "the user registers with name \"Charlie Brown\" age \"65\" and condition \"Heart Disease\"",
             "result": {
               "status": "undefined",
@@ -2837,7 +3161,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 17,
             "name": "selects health plan \"standard\"",
             "result": {
               "status": "undefined",
@@ -2847,7 +3171,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 18,
             "name": "accepts terms and conditions",
             "result": {
               "status": "undefined",
@@ -2857,8 +3181,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "patient account should be created successfully",
+            "line": 19,
+            "name": "AC-1: patient account should be created successfully",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2867,8 +3191,68 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
-            "name": "confirmation email should be sent to \"charlie@example.com\"",
+            "line": 20,
+            "name": "AC-2: confirmation email should be sent to \"charlie@example.com\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "AC-3: patient ID is assigned",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "AC-4: insurance details are linked",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "AC-5: health profile is recorded",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "AC-6: emergency contact is verified",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "AC-7: medical history is documented",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "AC-8: account status shows \"Active\"",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2877,12 +3261,60 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@xray(\"XR-TC-102\")",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac7",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac8",
+            "line": 13
           }
         ],
         "type": "scenario"
@@ -2891,13 +3323,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;patients-schedule-appointments-with-different-providers",
         "keyword": "Scenario Outline",
-        "line": 29,
+        "line": 53,
         "name": "Patients schedule appointments with different providers",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 20,
+            "line": 39,
             "name": "a patient is logged into healthcare portal",
             "result": {
               "status": "undefined",
@@ -2907,7 +3339,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 40,
             "name": "the patient selects provider \"Dr. Smith\" with specialty \"Cardiology\"",
             "result": {
               "status": "undefined",
@@ -2917,7 +3349,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 41,
             "name": "books appointment on \"2024-02-01\" at \"10:00 AM\"",
             "result": {
               "status": "undefined",
@@ -2927,7 +3359,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 42,
             "name": "confirms the appointment",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:52"
@@ -2940,8 +3372,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
-            "name": "appointment should be confirmed",
+            "line": 43,
+            "name": "AC-1: appointment should be confirmed",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2950,8 +3382,58 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
-            "name": "confirmation code \"APT-001\" should be generated",
+            "line": 44,
+            "name": "AC-2: confirmation code \"APT-001\" should be generated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "AC-3: appointment details are displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "AC-4: calendar is updated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "AC-5: confirmation notification is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "AC-6: pre-appointment questionnaire is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "AC-7: appointment reminder is scheduled",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -2960,12 +3442,60 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-102\")",
+            "line": 35
+          },
+          {
+            "name": "@xray(\"XR-TC-106\")",
+            "line": 36
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac7",
+            "line": 37
           }
         ],
         "type": "scenario"
@@ -2974,13 +3504,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;patients-schedule-appointments-with-different-providers",
         "keyword": "Scenario Outline",
-        "line": 30,
+        "line": 54,
         "name": "Patients schedule appointments with different providers",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 20,
+            "line": 39,
             "name": "a patient is logged into healthcare portal",
             "result": {
               "status": "undefined",
@@ -2990,7 +3520,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 40,
             "name": "the patient selects provider \"Dr. Johnson\" with specialty \"Neurology\"",
             "result": {
               "status": "undefined",
@@ -3000,7 +3530,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 41,
             "name": "books appointment on \"2024-02-05\" at \"02:00 PM\"",
             "result": {
               "status": "undefined",
@@ -3010,7 +3540,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 42,
             "name": "confirms the appointment",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:52"
@@ -3023,8 +3553,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
-            "name": "appointment should be confirmed",
+            "line": 43,
+            "name": "AC-1: appointment should be confirmed",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3033,8 +3563,58 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
-            "name": "confirmation code \"APT-002\" should be generated",
+            "line": 44,
+            "name": "AC-2: confirmation code \"APT-002\" should be generated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "AC-3: appointment details are displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "AC-4: calendar is updated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "AC-5: confirmation notification is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "AC-6: pre-appointment questionnaire is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "AC-7: appointment reminder is scheduled",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3043,12 +3623,60 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-102\")",
+            "line": 35
+          },
+          {
+            "name": "@xray(\"XR-TC-106\")",
+            "line": 36
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac7",
+            "line": 37
           }
         ],
         "type": "scenario"
@@ -3057,13 +3685,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;patients-schedule-appointments-with-different-providers",
         "keyword": "Scenario Outline",
-        "line": 31,
+        "line": 55,
         "name": "Patients schedule appointments with different providers",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 20,
+            "line": 39,
             "name": "a patient is logged into healthcare portal",
             "result": {
               "status": "undefined",
@@ -3073,7 +3701,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 40,
             "name": "the patient selects provider \"Dr. Williams\" with specialty \"General\"",
             "result": {
               "status": "undefined",
@@ -3083,7 +3711,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 41,
             "name": "books appointment on \"2024-02-10\" at \"09:30 AM\"",
             "result": {
               "status": "undefined",
@@ -3093,7 +3721,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 42,
             "name": "confirms the appointment",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:52"
@@ -3106,8 +3734,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
-            "name": "appointment should be confirmed",
+            "line": 43,
+            "name": "AC-1: appointment should be confirmed",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3116,8 +3744,58 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
-            "name": "confirmation code \"APT-003\" should be generated",
+            "line": 44,
+            "name": "AC-2: confirmation code \"APT-003\" should be generated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "AC-3: appointment details are displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "AC-4: calendar is updated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "AC-5: confirmation notification is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "AC-6: pre-appointment questionnaire is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "AC-7: appointment reminder is scheduled",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3126,12 +3804,60 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-102\")",
+            "line": 35
+          },
+          {
+            "name": "@xray(\"XR-TC-106\")",
+            "line": 36
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac7",
+            "line": 37
           }
         ],
         "type": "scenario"
@@ -3140,13 +3866,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;patients-schedule-appointments-with-different-providers",
         "keyword": "Scenario Outline",
-        "line": 32,
+        "line": 56,
         "name": "Patients schedule appointments with different providers",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 20,
+            "line": 39,
             "name": "a patient is logged into healthcare portal",
             "result": {
               "status": "undefined",
@@ -3156,7 +3882,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 40,
             "name": "the patient selects provider \"Dr. Brown\" with specialty \"Orthopedics\"",
             "result": {
               "status": "undefined",
@@ -3166,7 +3892,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 41,
             "name": "books appointment on \"2024-02-15\" at \"03:00 PM\"",
             "result": {
               "status": "undefined",
@@ -3176,7 +3902,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 42,
             "name": "confirms the appointment",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:52"
@@ -3189,8 +3915,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
-            "name": "appointment should be confirmed",
+            "line": 43,
+            "name": "AC-1: appointment should be confirmed",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3199,8 +3925,58 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
-            "name": "confirmation code \"APT-004\" should be generated",
+            "line": 44,
+            "name": "AC-2: confirmation code \"APT-004\" should be generated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "AC-3: appointment details are displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "AC-4: calendar is updated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "AC-5: confirmation notification is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "AC-6: pre-appointment questionnaire is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "AC-7: appointment reminder is scheduled",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3209,12 +3985,60 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-102\")",
+            "line": 35
+          },
+          {
+            "name": "@xray(\"XR-TC-106\")",
+            "line": 36
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 37
+          },
+          {
+            "name": "@acceptance-ac7",
+            "line": 37
           }
         ],
         "type": "scenario"
@@ -3223,13 +4047,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;medical-records-access-and-retrieval",
         "keyword": "Scenario Outline",
-        "line": 43,
+        "line": 74,
         "name": "Medical records access and retrieval",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 35,
+            "line": 62,
             "name": "a patient has medical records on file",
             "result": {
               "status": "undefined",
@@ -3239,7 +4063,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 36,
+            "line": 63,
             "name": "the patient requests records from date \"2023-01-01\" to \"2024-01-31\"",
             "result": {
               "status": "undefined",
@@ -3249,7 +4073,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 37,
+            "line": 64,
             "name": "filters by record type \"Lab Results\"",
             "result": {
               "status": "undefined",
@@ -3259,8 +4083,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
-            "name": "matching records should be retrieved",
+            "line": 65,
+            "name": "AC-1: matching records should be retrieved",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3269,8 +4093,48 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 39,
-            "name": "records should be encrypted and secure",
+            "line": 66,
+            "name": "AC-2: records should be encrypted and secure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "AC-3: record count is displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "AC-4: records can be downloaded",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "AC-5: audit trail is logged",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "AC-6: privacy compliance is maintained",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3279,12 +4143,56 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-103\")",
+            "line": 58
+          },
+          {
+            "name": "@xray(\"XR-TC-111\")",
+            "line": 59
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 60
           }
         ],
         "type": "scenario"
@@ -3293,13 +4201,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;medical-records-access-and-retrieval",
         "keyword": "Scenario Outline",
-        "line": 44,
+        "line": 75,
         "name": "Medical records access and retrieval",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 35,
+            "line": 62,
             "name": "a patient has medical records on file",
             "result": {
               "status": "undefined",
@@ -3309,7 +4217,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 36,
+            "line": 63,
             "name": "the patient requests records from date \"2023-06-01\" to \"2024-01-31\"",
             "result": {
               "status": "undefined",
@@ -3319,7 +4227,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 37,
+            "line": 64,
             "name": "filters by record type \"Prescriptions\"",
             "result": {
               "status": "undefined",
@@ -3329,8 +4237,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
-            "name": "matching records should be retrieved",
+            "line": 65,
+            "name": "AC-1: matching records should be retrieved",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3339,8 +4247,48 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 39,
-            "name": "records should be encrypted and secure",
+            "line": 66,
+            "name": "AC-2: records should be encrypted and secure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "AC-3: record count is displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "AC-4: records can be downloaded",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "AC-5: audit trail is logged",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "AC-6: privacy compliance is maintained",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3349,12 +4297,56 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-103\")",
+            "line": 58
+          },
+          {
+            "name": "@xray(\"XR-TC-111\")",
+            "line": 59
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 60
           }
         ],
         "type": "scenario"
@@ -3363,13 +4355,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;medical-records-access-and-retrieval",
         "keyword": "Scenario Outline",
-        "line": 45,
+        "line": 76,
         "name": "Medical records access and retrieval",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 35,
+            "line": 62,
             "name": "a patient has medical records on file",
             "result": {
               "status": "undefined",
@@ -3379,7 +4371,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 36,
+            "line": 63,
             "name": "the patient requests records from date \"2022-01-01\" to \"2024-01-31\"",
             "result": {
               "status": "undefined",
@@ -3389,7 +4381,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 37,
+            "line": 64,
             "name": "filters by record type \"Visit Notes\"",
             "result": {
               "status": "undefined",
@@ -3399,8 +4391,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
-            "name": "matching records should be retrieved",
+            "line": 65,
+            "name": "AC-1: matching records should be retrieved",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3409,8 +4401,48 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 39,
-            "name": "records should be encrypted and secure",
+            "line": 66,
+            "name": "AC-2: records should be encrypted and secure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "AC-3: record count is displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "AC-4: records can be downloaded",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "AC-5: audit trail is logged",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "AC-6: privacy compliance is maintained",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3419,12 +4451,56 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-103\")",
+            "line": 58
+          },
+          {
+            "name": "@xray(\"XR-TC-111\")",
+            "line": 59
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 60
           }
         ],
         "type": "scenario"
@@ -3433,13 +4509,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;medical-records-access-and-retrieval",
         "keyword": "Scenario Outline",
-        "line": 46,
+        "line": 77,
         "name": "Medical records access and retrieval",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 35,
+            "line": 62,
             "name": "a patient has medical records on file",
             "result": {
               "status": "undefined",
@@ -3449,7 +4525,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 36,
+            "line": 63,
             "name": "the patient requests records from date \"2023-01-01\" to \"2024-01-31\"",
             "result": {
               "status": "undefined",
@@ -3459,7 +4535,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 37,
+            "line": 64,
             "name": "filters by record type \"Imaging\"",
             "result": {
               "status": "undefined",
@@ -3469,8 +4545,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
-            "name": "matching records should be retrieved",
+            "line": 65,
+            "name": "AC-1: matching records should be retrieved",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3479,8 +4555,48 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 39,
-            "name": "records should be encrypted and secure",
+            "line": 66,
+            "name": "AC-2: records should be encrypted and secure",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "AC-3: record count is displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "AC-4: records can be downloaded",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "AC-5: audit trail is logged",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "AC-6: privacy compliance is maintained",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3489,12 +4605,56 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-103\")",
+            "line": 58
+          },
+          {
+            "name": "@xray(\"XR-TC-111\")",
+            "line": 59
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 60
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 60
           }
         ],
         "type": "scenario"
@@ -3503,13 +4663,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;prescription-refill-requests",
         "keyword": "Scenario Outline",
-        "line": 57,
+        "line": 91,
         "name": "Prescription refill requests",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 49,
+            "line": 83,
             "name": "a patient has active prescriptions",
             "result": {
               "status": "undefined",
@@ -3519,7 +4679,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 50,
+            "line": 84,
             "name": "the patient requests refill for medication \"Lisinopril\" with quantity \"30\"",
             "result": {
               "status": "undefined",
@@ -3529,7 +4689,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 51,
+            "line": 85,
             "name": "submits refill request to provider \"Dr. Smith\"",
             "result": {
               "status": "undefined",
@@ -3539,7 +4699,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 52,
+            "line": 86,
             "name": "refill request should be sent to provider",
             "result": {
               "status": "undefined",
@@ -3549,7 +4709,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 53,
+            "line": 87,
             "name": "patient should receive confirmation email",
             "result": {
               "status": "undefined",
@@ -3559,12 +4719,52 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-104\")",
+            "line": 79
+          },
+          {
+            "name": "@xray(\"XR-TC-113\")",
+            "line": 80
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 81
           }
         ],
         "type": "scenario"
@@ -3573,13 +4773,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;prescription-refill-requests",
         "keyword": "Scenario Outline",
-        "line": 58,
+        "line": 92,
         "name": "Prescription refill requests",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 49,
+            "line": 83,
             "name": "a patient has active prescriptions",
             "result": {
               "status": "undefined",
@@ -3589,7 +4789,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 50,
+            "line": 84,
             "name": "the patient requests refill for medication \"Metformin\" with quantity \"90\"",
             "result": {
               "status": "undefined",
@@ -3599,7 +4799,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 51,
+            "line": 85,
             "name": "submits refill request to provider \"Dr. Johnson\"",
             "result": {
               "status": "undefined",
@@ -3609,7 +4809,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 52,
+            "line": 86,
             "name": "refill request should be sent to provider",
             "result": {
               "status": "undefined",
@@ -3619,7 +4819,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 53,
+            "line": 87,
             "name": "patient should receive confirmation email",
             "result": {
               "status": "undefined",
@@ -3629,12 +4829,52 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-104\")",
+            "line": 79
+          },
+          {
+            "name": "@xray(\"XR-TC-113\")",
+            "line": 80
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 81
           }
         ],
         "type": "scenario"
@@ -3643,13 +4883,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;prescription-refill-requests",
         "keyword": "Scenario Outline",
-        "line": 59,
+        "line": 93,
         "name": "Prescription refill requests",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 49,
+            "line": 83,
             "name": "a patient has active prescriptions",
             "result": {
               "status": "undefined",
@@ -3659,7 +4899,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 50,
+            "line": 84,
             "name": "the patient requests refill for medication \"Atorvastatin\" with quantity \"60\"",
             "result": {
               "status": "undefined",
@@ -3669,7 +4909,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 51,
+            "line": 85,
             "name": "submits refill request to provider \"Dr. Williams\"",
             "result": {
               "status": "undefined",
@@ -3679,7 +4919,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 52,
+            "line": 86,
             "name": "refill request should be sent to provider",
             "result": {
               "status": "undefined",
@@ -3689,7 +4929,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 53,
+            "line": 87,
             "name": "patient should receive confirmation email",
             "result": {
               "status": "undefined",
@@ -3699,12 +4939,52 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-104\")",
+            "line": 79
+          },
+          {
+            "name": "@xray(\"XR-TC-113\")",
+            "line": 80
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 81
           }
         ],
         "type": "scenario"
@@ -3713,13 +4993,13 @@
         "description": "",
         "id": "healthcare-domain-regression-suite;prescription-refill-requests",
         "keyword": "Scenario Outline",
-        "line": 60,
+        "line": 94,
         "name": "Prescription refill requests",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 49,
+            "line": 83,
             "name": "a patient has active prescriptions",
             "result": {
               "status": "undefined",
@@ -3729,7 +5009,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 50,
+            "line": 84,
             "name": "the patient requests refill for medication \"Aspirin\" with quantity \"100\"",
             "result": {
               "status": "undefined",
@@ -3739,7 +5019,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 51,
+            "line": 85,
             "name": "submits refill request to provider \"Dr. Brown\"",
             "result": {
               "status": "undefined",
@@ -3749,7 +5029,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 52,
+            "line": 86,
             "name": "refill request should be sent to provider",
             "result": {
               "status": "undefined",
@@ -3759,7 +5039,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 53,
+            "line": 87,
             "name": "patient should receive confirmation email",
             "result": {
               "status": "undefined",
@@ -3769,29 +5049,81 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-104\")",
+            "line": 79
+          },
+          {
+            "name": "@xray(\"XR-TC-113\")",
+            "line": 80
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 81
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 81
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "healthcare-domain-regression-suite",
-    "line": 2,
+    "line": 10,
     "keyword": "Feature",
     "name": "Healthcare Domain Regression Suite",
     "tags": [
       {
+        "name": "@jira(\"QED-101\")",
+        "line": 5
+      },
+      {
+        "name": "@xray-test-plan(\"XR-TP-001\")",
+        "line": 6
+      },
+      {
         "name": "@regression",
-        "line": 1
+        "line": 7
       },
       {
         "name": "@healthcare",
-        "line": 1
+        "line": 8
+      },
+      {
+        "name": "@domain(\"healthcare\")",
+        "line": 9
       }
     ],
     "uri": "playwright\\healthcare\\features\\healthcare_regression_suite.feature"
@@ -3803,27 +5135,27 @@
         "description": "",
         "id": "healthcare-domain-smoke-tests;patient-successfully-registers-for-healthcare-service",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 14,
         "name": "Patient successfully registers for healthcare service",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 15,
             "name": "the user is on the healthcare registration page",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:8"
             },
             "result": {
               "status": "failed",
-              "duration": 2881279500,
+              "duration": 3376123699,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/register\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3001/register\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:11:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 16,
             "name": "the user fills in valid patient information",
             "result": {
               "status": "undefined",
@@ -3833,7 +5165,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 17,
             "name": "selects an active health plan",
             "result": {
               "status": "undefined",
@@ -3843,7 +5175,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 18,
             "name": "completes registration",
             "result": {
               "status": "undefined",
@@ -3853,8 +5185,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "patient account should be created",
+            "line": 19,
+            "name": "AC-1: patient account should be created",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3863,48 +5195,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
-            "name": "confirmation should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 1
-          },
-          {
-            "name": "@healthcare",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "healthcare-domain-smoke-tests;patient-can-schedule-a-basic-appointment",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Patient can schedule a basic appointment",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 13,
-            "name": "a patient is logged into the healthcare system",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "the patient selects a healthcare provider",
+            "line": 20,
+            "name": "AC-2: confirmation should be displayed",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3913,68 +5205,8 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
-            "name": "books an appointment with available time slot",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "confirms the booking",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "appointment should be confirmed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "confirmation details should be displayed",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 1
-          },
-          {
-            "name": "@healthcare",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "healthcare-domain-smoke-tests;patient-can-access-their-medical-records",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Patient can access their medical records",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
             "line": 21,
-            "name": "a patient is logged in with existing records",
+            "name": "AC-3: confirmation email is sent",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3982,9 +5214,9 @@
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "And ",
             "line": 22,
-            "name": "the patient navigates to medical records section",
+            "name": "AC-4: patient can login immediately",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -3994,6 +5226,270 @@
             "arguments": [],
             "keyword": "And ",
             "line": 23,
+            "name": "AC-5: health plan details are visible",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "AC-6: welcome package is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          },
+          {
+            "name": "@healthcare",
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@xray(\"XR-TC-101\")",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "healthcare-domain-smoke-tests;patient-can-schedule-a-basic-appointment",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Patient can schedule a basic appointment",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "a patient is logged into the healthcare system",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "the patient selects a healthcare provider",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "books an appointment with available time slot",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "confirms the booking",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "AC-1: appointment should be confirmed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "AC-2: confirmation details should be displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "AC-3: confirmation notification is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "AC-4: appointment appears in calendar",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "AC-5: reminder notification will be sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "AC-6: appointment can be cancelled or rescheduled",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          },
+          {
+            "name": "@healthcare",
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-102\")",
+            "line": 26
+          },
+          {
+            "name": "@xray(\"XR-TC-105\")",
+            "line": 27
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 28
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 28
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 28
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 28
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 28
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 28
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "healthcare-domain-smoke-tests;patient-can-access-their-medical-records",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Patient can access their medical records",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "a patient is logged in with existing records",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "the patient navigates to medical records section",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
             "name": "requests to view recent records",
             "result": {
               "status": "undefined",
@@ -4003,8 +5499,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
-            "name": "records should load successfully",
+            "line": 48,
+            "name": "AC-1: records should load successfully",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -4013,8 +5509,38 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
-            "name": "records should be displayed securely",
+            "line": 49,
+            "name": "AC-2: records should be displayed securely",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "AC-3: records can be filtered by date",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "AC-4: records can be downloaded as PDF",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "AC-5: record sharing options are available",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -4023,29 +5549,81 @@
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
             "name": "@smoke",
-            "line": 1
+            "line": 7
           },
           {
             "name": "@healthcare",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 9
+          },
+          {
+            "name": "@jira(\"QED-103\")",
+            "line": 41
+          },
+          {
+            "name": "@xray(\"XR-TC-109\")",
+            "line": 42
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 43
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "healthcare-domain-smoke-tests",
-    "line": 2,
+    "line": 10,
     "keyword": "Feature",
     "name": "Healthcare Domain Smoke Tests",
     "tags": [
       {
+        "name": "@jira(\"QED-101\")",
+        "line": 5
+      },
+      {
+        "name": "@xray-test-plan(\"XR-TP-001\")",
+        "line": 6
+      },
+      {
         "name": "@smoke",
-        "line": 1
+        "line": 7
       },
       {
         "name": "@healthcare",
-        "line": 1
+        "line": 8
+      },
+      {
+        "name": "@domain(\"healthcare\")",
+        "line": 9
       }
     ],
     "uri": "playwright\\healthcare\\features\\healthcare_smoke_tests.feature"
@@ -4057,27 +5635,27 @@
         "description": "",
         "id": "healthcare-application-ui;user-registers-for-healthcare-services",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 14,
         "name": "User registers for healthcare services",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 15,
             "name": "the user is on the healthcare registration page",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:8"
             },
             "result": {
               "status": "failed",
-              "duration": 2910497100,
+              "duration": 3578563700,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/register\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3001/register\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:11:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
+            "line": 16,
             "name": "the user fills in personal health details",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:14"
@@ -4090,7 +5668,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 17,
             "name": "selects healthcare plan",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:20"
@@ -4103,7 +5681,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
+            "line": 18,
             "name": "submits the registration",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:24"
@@ -4116,38 +5694,98 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "the registration should be successful",
-            "match": {
-              "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:28"
-            },
+            "line": 19,
+            "name": "AC-1: the registration should be successful",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
               "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "a confirmation should be displayed",
-            "match": {
-              "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:33"
-            },
+            "line": 20,
+            "name": "AC-2: a confirmation should be displayed",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "AC-3: confirmation email is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "AC-4: account status shows \"Active\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "AC-5: user can login immediately",
+            "result": {
+              "status": "undefined",
               "duration": 0
             }
           }
         ],
         "tags": [
           {
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 7
+          },
+          {
             "name": "@regression",
-            "line": 1
+            "line": 8
+          },
+          {
+            "name": "@xray(\"XR-TC-101\")",
+            "line": 11
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 12
           },
           {
             "name": "@smoke",
-            "line": 4
+            "line": 13
           }
         ],
         "type": "scenario"
@@ -4156,40 +5794,40 @@
         "description": "",
         "id": "healthcare-application-ui;user-schedules-an-appointment",
         "keyword": "Scenario",
-        "line": 14,
+        "line": 29,
         "name": "User schedules an appointment",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 15,
+            "line": 30,
             "name": "the user is logged in to healthcare portal",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 437600
+              "duration": 504400
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 16,
+            "line": 31,
             "name": "the user navigates to appointment booking",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:43"
             },
             "result": {
               "status": "failed",
-              "duration": 248100599,
+              "duration": 243187999,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/appointments\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3001/appointments\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:44:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 32,
             "name": "selects a doctor and time",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:47"
@@ -4202,7 +5840,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
+            "line": 33,
             "name": "confirms the appointment",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:52"
@@ -4215,38 +5853,116 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "the appointment should be booked",
-            "match": {
-              "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:56"
-            },
+            "line": 34,
+            "name": "AC-1: the appointment should be booked",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
               "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
-            "name": "confirmation details should be shown",
-            "match": {
-              "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:60"
-            },
+            "line": 35,
+            "name": "AC-2: confirmation details should be shown",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "AC-3: calendar is updated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "AC-4: confirmation notification is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "AC-5: appointment reminder email is sent",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "AC-6: SMS confirmation is sent (if opted)",
+            "result": {
+              "status": "undefined",
               "duration": 0
             }
           }
         ],
         "tags": [
           {
-            "name": "@regression",
-            "line": 1
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 7
           },
           {
             "name": "@regression",
-            "line": 13
+            "line": 8
+          },
+          {
+            "name": "@jira(\"QED-102\")",
+            "line": 25
+          },
+          {
+            "name": "@xray(\"XR-TC-105\")",
+            "line": 26
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 27
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 27
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 27
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 27
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 27
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 27
+          },
+          {
+            "name": "@regression",
+            "line": 28
           }
         ],
         "type": "scenario"
@@ -4255,84 +5971,160 @@
         "description": "",
         "id": "healthcare-application-ui;user-views-medical-records",
         "keyword": "Scenario",
-        "line": 23,
+        "line": 45,
         "name": "User views medical records",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 24,
+            "line": 46,
             "name": "the user is logged in",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:64"
             },
             "result": {
               "status": "passed",
-              "duration": 134099
+              "duration": 126300
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 25,
+            "line": 47,
             "name": "the user accesses medical records",
             "match": {
               "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:68"
             },
             "result": {
               "status": "failed",
-              "duration": 2095186900,
+              "duration": 2106803099,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/records\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3001/records\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\healthcare\\step_definitions\\healthcare_steps.js:69:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 26,
-            "name": "health history should be displayed",
-            "match": {
-              "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:72"
-            },
+            "line": 48,
+            "name": "AC-1: health history should be displayed in timeline format",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
               "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
-            "name": "records should be secure",
-            "match": {
-              "location": "playwright\\healthcare\\step_definitions\\healthcare_steps.js:76"
-            },
+            "line": 49,
+            "name": "AC-2: records should be secure (encrypted)",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "AC-3: records can be filtered by date",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "AC-4: records can be filtered by type",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "AC-5: user can download records as PDF",
+            "result": {
+              "status": "undefined",
               "duration": 0
             }
           }
         ],
         "tags": [
           {
-            "name": "@regression",
-            "line": 1
+            "name": "@jira(\"QED-101\")",
+            "line": 5
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 6
+          },
+          {
+            "name": "@domain(\"healthcare\")",
+            "line": 7
           },
           {
             "name": "@regression",
-            "line": 22
+            "line": 8
+          },
+          {
+            "name": "@jira(\"QED-103\")",
+            "line": 41
+          },
+          {
+            "name": "@xray(\"XR-TC-109\")",
+            "line": 42
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 43
+          },
+          {
+            "name": "@regression",
+            "line": 44
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "healthcare-application-ui",
-    "line": 2,
+    "line": 9,
     "keyword": "Feature",
     "name": "Healthcare Application UI",
     "tags": [
       {
+        "name": "@jira(\"QED-101\")",
+        "line": 5
+      },
+      {
+        "name": "@xray-test-plan(\"XR-TP-001\")",
+        "line": 6
+      },
+      {
+        "name": "@domain(\"healthcare\")",
+        "line": 7
+      },
+      {
         "name": "@regression",
-        "line": 1
+        "line": 8
       }
     ],
     "uri": "playwright\\healthcare\\features\\healthcare_ui.feature"
@@ -4357,7 +6149,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 162700
+              "duration": 201600
             }
           },
           {
@@ -4370,7 +6162,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5482300,
+              "duration": 7880100,
               "error_message": "{\"message\":\"\",\"name\":\"AggregateError\",\"stack\":\"AggregateError\\n    at AxiosError.from (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:881:24)\\n    at RedirectableRequest.handleRequestError (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:3397:25)\\n    at RedirectableRequest.emit (node:events:518:28)\\n    at eventHandlers.<computed> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\follow-redirects\\\\index.js:56:24)\\n    at ClientRequest.emit (node:events:518:28)\\n    at emitErrorEvent (node:_http_client:104:11)\\n    at Socket.socketErrorListener (node:_http_client:518:5)\\n    at Socket.emit (node:events:530:35)\\n    at emitErrorNT (node:internal/streams/destroy:170:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\\n    at Axios.request (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:4517:41)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async World.<anonymous> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\playwright\\\\banking\\\\step_definitions\\\\banking_steps.js:82:20)\\n    at async wrapPromiseWithTimeout (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\time.js:67:12)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\user_code_runner.js:64:22)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\step_runner.js:64:26)\\n    at async TestCaseRunner.invokeStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:127:16)\\n    at async TestCaseRunner.runStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:299:26)\\n    at async C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:212:44\\n    at async TestCaseRunner.aroundTestStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:152:32)\",\"config\":{\"transitional\":{\"silentJSONParsing\":true,\"forcedJSONParsing\":true,\"clarifyTimeoutError\":false,\"legacyInterceptorReqResOrdering\":true},\"adapter\":[\"xhr\",\"http\",\"fetch\"],\"transformRequest\":[null],\"transformResponse\":[null],\"timeout\":0,\"xsrfCookieName\":\"XSRF-TOKEN\",\"xsrfHeaderName\":\"X-XSRF-TOKEN\",\"maxContentLength\":-1,\"maxBodyLength\":-1,\"env\":{},\"headers\":{\"Accept\":\"application/json, text/plain, */*\",\"Content-Type\":\"application/json\",\"User-Agent\":\"axios/1.15.2\",\"Content-Length\":\"30\",\"Accept-Encoding\":\"gzip, compress, deflate, br\"},\"method\":\"post\",\"url\":\"http://localhost:3002/api/loans\",\"data\":\"{\\\"name\\\":\\\"John\\\",\\\"amount\\\":10000}\",\"allowAbsoluteUrls\":true},\"code\":\"ECONNREFUSED\"}\n    at AxiosError.from (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:881:24)\n    at RedirectableRequest.handleRequestError (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:3397:25)\n    at RedirectableRequest.emit (node:events:518:28)\n    at eventHandlers.<computed> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\follow-redirects\\index.js:56:24)\n    at ClientRequest.emit (node:events:518:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:530:35)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:4517:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:82:20)"
             }
           },
@@ -4430,7 +6222,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 126799
+              "duration": 164499
             }
           },
           {
@@ -4443,7 +6235,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 3880999,
+              "duration": 4415999,
               "error_message": "{\"message\":\"\",\"name\":\"AggregateError\",\"stack\":\"AggregateError\\n    at AxiosError.from (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:881:24)\\n    at RedirectableRequest.handleRequestError (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:3397:25)\\n    at RedirectableRequest.emit (node:events:518:28)\\n    at eventHandlers.<computed> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\follow-redirects\\\\index.js:56:24)\\n    at ClientRequest.emit (node:events:518:28)\\n    at emitErrorEvent (node:_http_client:104:11)\\n    at Socket.socketErrorListener (node:_http_client:518:5)\\n    at Socket.emit (node:events:530:35)\\n    at emitErrorNT (node:internal/streams/destroy:170:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\\n    at Axios.request (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:4517:41)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async World.<anonymous> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\playwright\\\\banking\\\\step_definitions\\\\banking_steps.js:95:20)\\n    at async wrapPromiseWithTimeout (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\time.js:67:12)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\user_code_runner.js:64:22)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\step_runner.js:64:26)\\n    at async TestCaseRunner.invokeStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:127:16)\\n    at async TestCaseRunner.runStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:299:26)\\n    at async C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:212:44\\n    at async TestCaseRunner.aroundTestStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:152:32)\",\"config\":{\"transitional\":{\"silentJSONParsing\":true,\"forcedJSONParsing\":true,\"clarifyTimeoutError\":false,\"legacyInterceptorReqResOrdering\":true},\"adapter\":[\"xhr\",\"http\",\"fetch\"],\"transformRequest\":[null],\"transformResponse\":[null],\"timeout\":0,\"xsrfCookieName\":\"XSRF-TOKEN\",\"xsrfHeaderName\":\"X-XSRF-TOKEN\",\"maxContentLength\":-1,\"maxBodyLength\":-1,\"env\":{},\"headers\":{\"Accept\":\"application/json, text/plain, */*\",\"Content-Type\":\"application/json\",\"User-Agent\":\"axios/1.15.2\",\"Content-Length\":\"34\",\"Accept-Encoding\":\"gzip, compress, deflate, br\"},\"method\":\"post\",\"url\":\"http://localhost:3002/api/eligibility\",\"data\":\"{\\\"income\\\":50000,\\\"creditScore\\\":750}\",\"allowAbsoluteUrls\":true},\"code\":\"ECONNREFUSED\"}\n    at AxiosError.from (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:881:24)\n    at RedirectableRequest.handleRequestError (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:3397:25)\n    at RedirectableRequest.emit (node:events:518:28)\n    at eventHandlers.<computed> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\follow-redirects\\index.js:56:24)\n    at ClientRequest.emit (node:events:518:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:530:35)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:4517:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:95:20)"
             }
           },
@@ -4500,7 +6292,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106399
+              "duration": 147700
             }
           },
           {
@@ -4513,7 +6305,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 3461000,
+              "duration": 6074399,
               "error_message": "{\"message\":\"\",\"name\":\"AggregateError\",\"stack\":\"AggregateError\\n    at AxiosError.from (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:881:24)\\n    at RedirectableRequest.handleRequestError (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:3397:25)\\n    at RedirectableRequest.emit (node:events:518:28)\\n    at eventHandlers.<computed> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\follow-redirects\\\\index.js:56:24)\\n    at ClientRequest.emit (node:events:518:28)\\n    at emitErrorEvent (node:_http_client:104:11)\\n    at Socket.socketErrorListener (node:_http_client:518:5)\\n    at Socket.emit (node:events:530:35)\\n    at emitErrorNT (node:internal/streams/destroy:170:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\\n    at Axios.request (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\axios\\\\dist\\\\node\\\\axios.cjs:4517:41)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async World.<anonymous> (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\playwright\\\\banking\\\\step_definitions\\\\banking_steps.js:108:20)\\n    at async wrapPromiseWithTimeout (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\time.js:67:12)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\user_code_runner.js:64:22)\\n    at async Object.run (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\step_runner.js:64:26)\\n    at async TestCaseRunner.invokeStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:127:16)\\n    at async TestCaseRunner.runStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:299:26)\\n    at async C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:212:44\\n    at async TestCaseRunner.aroundTestStep (C:\\\\playwright-agentic-qe-framework\\\\playwright-agentic-qe-framework\\\\node_modules\\\\@cucumber\\\\cucumber\\\\lib\\\\runtime\\\\test_case_runner.js:152:32)\",\"config\":{\"transitional\":{\"silentJSONParsing\":true,\"forcedJSONParsing\":true,\"clarifyTimeoutError\":false,\"legacyInterceptorReqResOrdering\":true},\"adapter\":[\"xhr\",\"http\",\"fetch\"],\"transformRequest\":[null],\"transformResponse\":[null],\"timeout\":0,\"xsrfCookieName\":\"XSRF-TOKEN\",\"xsrfHeaderName\":\"X-XSRF-TOKEN\",\"maxContentLength\":-1,\"maxBodyLength\":-1,\"env\":{},\"headers\":{\"Accept\":\"application/json, text/plain, */*\",\"User-Agent\":\"axios/1.15.2\",\"Accept-Encoding\":\"gzip, compress, deflate, br\"},\"method\":\"get\",\"url\":\"http://localhost:3002/api/loans/1/status\",\"allowAbsoluteUrls\":true},\"code\":\"ECONNREFUSED\"}\n    at AxiosError.from (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:881:24)\n    at RedirectableRequest.handleRequestError (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:3397:25)\n    at RedirectableRequest.emit (node:events:518:28)\n    at eventHandlers.<computed> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\follow-redirects\\index.js:56:24)\n    at ClientRequest.emit (node:events:518:28)\n    at emitErrorEvent (node:_http_client:104:11)\n    at Socket.socketErrorListener (node:_http_client:518:5)\n    at Socket.emit (node:events:530:35)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\axios\\dist\\node\\axios.cjs:4517:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:108:20)"
             }
           },
@@ -4583,7 +6375,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 108899
+              "duration": 188600
             }
           },
           {
@@ -4596,7 +6388,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2131300,
+              "duration": 2906499,
               "error_message": "{\"code\":\"ECONNREFUSED\"}\n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)\n    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)"
             }
           },
@@ -4656,7 +6448,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 134500
+              "duration": 169900
             }
           },
           {
@@ -4669,7 +6461,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 248899,
+              "duration": 314599,
               "error_message": "Error: Connection terminated unexpectedly\n    at C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\pg\\lib\\client.js:631:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:133:3)"
             }
           },
@@ -4723,7 +6515,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 84500
+              "duration": 101600
             }
           },
           {
@@ -4736,7 +6528,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5004121500,
+              "duration": 5015114800,
               "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
             }
           },
@@ -4812,7 +6604,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2932509700,
+              "duration": 2950524699,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3002/apply-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3002/apply-loan\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:11:14)"
             }
           },
@@ -4896,7 +6688,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 3210933000,
+              "duration": 2951044999,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3002/apply-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3002/apply-loan\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:11:14)"
             }
           },
@@ -4980,7 +6772,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2881004000,
+              "duration": 2935017899,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3002/apply-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3002/apply-loan\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:11:14)"
             }
           },
@@ -5064,7 +6856,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2911533999,
+              "duration": 2910285499,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3002/apply-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3002/apply-loan\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:11:14)"
             }
           },
@@ -6048,7 +7840,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2916262199,
+              "duration": 2936503499,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3002/apply-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3002/apply-loan\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:11:14)"
             }
           },
@@ -6282,27 +8074,27 @@
         "description": "",
         "id": "banking-loan-application-ui;user-applies-for-a-personal-loan",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 15,
         "name": "User applies for a personal loan",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 16,
             "name": "the user is on the loan application page",
             "match": {
               "location": "playwright\\banking\\step_definitions\\banking_steps.js:8"
             },
             "result": {
               "status": "failed",
-              "duration": 2926727399,
+              "duration": 2996237699,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3002/apply-loan\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3002/apply-loan\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:11:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
+            "line": 17,
             "name": "the user fills in loan application details",
             "match": {
               "location": "playwright\\banking\\step_definitions\\banking_steps.js:14"
@@ -6315,7 +8107,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
+            "line": 18,
             "name": "selects loan type and amount",
             "match": {
               "location": "playwright\\banking\\step_definitions\\banking_steps.js:20"
@@ -6328,7 +8120,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
+            "line": 19,
             "name": "submits the application",
             "result": {
               "status": "ambiguous",
@@ -6338,35 +8130,140 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "the application should be submitted successfully",
+            "line": 20,
+            "name": "AC-1: the application should be submitted successfully",
             "result": {
-              "status": "ambiguous",
+              "status": "undefined",
               "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "an application reference number should be displayed",
-            "match": {
-              "location": "playwright\\banking\\step_definitions\\banking_steps.js:33"
-            },
+            "line": 21,
+            "name": "AC-2: an application reference number should be displayed",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "AC-3: confirmation email is sent with reference number",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "AC-4: application appears in user profile",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "AC-5: status shows as \"Pending Review\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "AC-6: estimated decision timeline is shown",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "AC-7: user can track application status",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "AC-8: user can upload supporting documents",
+            "result": {
+              "status": "undefined",
               "duration": 0
             }
           }
         ],
         "tags": [
           {
-            "name": "@regression",
-            "line": 1
+            "name": "@jira(\"QED-302\")",
+            "line": 6
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 7
+          },
+          {
+            "name": "@domain(\"banking\")",
+            "line": 8
+          },
+          {
+            "name": "@loan-application",
+            "line": 9
+          },
+          {
+            "name": "@xray(\"XR-TC-305\")",
+            "line": 12
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac6",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac7",
+            "line": 13
+          },
+          {
+            "name": "@acceptance-ac8",
+            "line": 13
           },
           {
             "name": "@smoke",
-            "line": 4
+            "line": 14
           }
         ],
         "type": "scenario"
@@ -6375,40 +8272,40 @@
         "description": "",
         "id": "banking-loan-application-ui;user-checks-loan-eligibility",
         "keyword": "Scenario",
-        "line": 14,
+        "line": 32,
         "name": "User checks loan eligibility",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 15,
+            "line": 33,
             "name": "the user is logged in to banking portal",
             "match": {
               "location": "playwright\\banking\\step_definitions\\banking_steps.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 369900
+              "duration": 525899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 16,
+            "line": 34,
             "name": "the user enters personal and financial details",
             "match": {
               "location": "playwright\\banking\\step_definitions\\banking_steps.js:43"
             },
             "result": {
               "status": "failed",
-              "duration": 5004786600,
+              "duration": 5016620599,
               "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 35,
             "name": "requests eligibility check",
             "match": {
               "location": "playwright\\banking\\step_definitions\\banking_steps.js:48"
@@ -6421,38 +8318,98 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "eligibility status should be displayed",
-            "match": {
-              "location": "playwright\\banking\\step_definitions\\banking_steps.js:52"
-            },
+            "line": 36,
+            "name": "AC-1: eligibility status should be displayed",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
               "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
-            "name": "maximum loan amount should be shown",
-            "match": {
-              "location": "playwright\\banking\\step_definitions\\banking_steps.js:56"
-            },
+            "line": 37,
+            "name": "AC-2: maximum loan amount should be shown",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "AC-3: interest rate is calculated and shown",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "AC-4: EMI (Estimated Monthly Installment) is calculated",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "AC-5: detailed eligibility report can be downloaded",
+            "result": {
+              "status": "undefined",
               "duration": 0
             }
           }
         ],
         "tags": [
           {
-            "name": "@regression",
-            "line": 1
+            "name": "@jira(\"QED-302\")",
+            "line": 6
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 7
+          },
+          {
+            "name": "@domain(\"banking\")",
+            "line": 8
+          },
+          {
+            "name": "@loan-application",
+            "line": 9
+          },
+          {
+            "name": "@xray(\"XR-TC-306\")",
+            "line": 29
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 30
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 30
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 30
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 30
+          },
+          {
+            "name": "@acceptance-ac5",
+            "line": 30
           },
           {
             "name": "@regression",
-            "line": 13
+            "line": 31
           }
         ],
         "type": "scenario"
@@ -6461,84 +8418,142 @@
         "description": "",
         "id": "banking-loan-application-ui;user-views-loan-status",
         "keyword": "Scenario",
-        "line": 22,
+        "line": 45,
         "name": "User views loan status",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 23,
+            "line": 46,
             "name": "the user has submitted a loan application",
             "match": {
               "location": "playwright\\banking\\step_definitions\\banking_steps.js:60"
             },
             "result": {
               "status": "passed",
-              "duration": 217599
+              "duration": 397899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 24,
+            "line": 47,
             "name": "the user checks application status",
             "match": {
               "location": "playwright\\banking\\step_definitions\\banking_steps.js:64"
             },
             "result": {
               "status": "failed",
-              "duration": 2346072299,
+              "duration": 2369078999,
               "error_message": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3002/application-status\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3002/application-status\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\playwright-agentic-qe-framework\\playwright-agentic-qe-framework\\playwright\\banking\\step_definitions\\banking_steps.js:65:14)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 25,
-            "name": "current status should be displayed",
-            "match": {
-              "location": "playwright\\banking\\step_definitions\\banking_steps.js:68"
-            },
+            "line": 48,
+            "name": "AC-1: current status should be displayed",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
               "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
-            "name": "next steps should be indicated",
-            "match": {
-              "location": "playwright\\banking\\step_definitions\\banking_steps.js:72"
-            },
+            "line": 49,
+            "name": "AC-2: next steps should be indicated",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "AC-3: estimated decision date is shown",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "AC-4: user can contact support for assistance",
+            "result": {
+              "status": "undefined",
               "duration": 0
             }
           }
         ],
         "tags": [
           {
-            "name": "@regression",
-            "line": 1
+            "name": "@jira(\"QED-302\")",
+            "line": 6
+          },
+          {
+            "name": "@xray-test-plan(\"XR-TP-001\")",
+            "line": 7
+          },
+          {
+            "name": "@domain(\"banking\")",
+            "line": 8
+          },
+          {
+            "name": "@loan-application",
+            "line": 9
+          },
+          {
+            "name": "@xray(\"XR-TC-307\")",
+            "line": 42
+          },
+          {
+            "name": "@acceptance-ac1",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac2",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac3",
+            "line": 43
+          },
+          {
+            "name": "@acceptance-ac4",
+            "line": 43
           },
           {
             "name": "@regression",
-            "line": 21
+            "line": 44
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "banking-loan-application-ui",
-    "line": 2,
+    "line": 10,
     "keyword": "Feature",
     "name": "Banking Loan Application UI",
     "tags": [
       {
-        "name": "@regression",
-        "line": 1
+        "name": "@jira(\"QED-302\")",
+        "line": 6
+      },
+      {
+        "name": "@xray-test-plan(\"XR-TP-001\")",
+        "line": 7
+      },
+      {
+        "name": "@domain(\"banking\")",
+        "line": 8
+      },
+      {
+        "name": "@loan-application",
+        "line": 9
       }
     ],
     "uri": "playwright\\banking\\features\\banking_ui.feature"

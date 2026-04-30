@@ -498,6 +498,23 @@ class JiraCloudIntegration {
   }
 
   /**
+   * Generic method to create any issue (Epic, Story, Sub-task, Task)
+   */
+  async createIssue(issueData) {
+    try {
+      const response = await this.client.post('/issues', issueData);
+      return {
+        key: response.data.key,
+        id: response.data.id,
+        self: response.data.self
+      };
+    } catch (error) {
+      console.error('Error creating issue:', error.response?.data || error.message);
+      throw error;
+    }
+  }
+
+  /**
    * Generate JIRA dashboard URL for quality metrics
    */
   getDashboardURL() {
